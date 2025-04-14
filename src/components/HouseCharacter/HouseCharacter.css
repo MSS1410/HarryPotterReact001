@@ -1,0 +1,58 @@
+/* src/pages/HouseCharacters/HouseCharacters.css */
+
+.house-characters-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.house-characters-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.house-characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+/* Estilos para cada tarjeta de personaje */
+.character-card {
+  width: 100%;
+  max-width: 180px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.character-card:hover {
+  transform: scale(1.02);
+}
+
+.character-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.character-card h3 {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.character-card p {
+  color: #666;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin: 1rem;
+}

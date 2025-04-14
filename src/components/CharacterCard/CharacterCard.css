@@ -1,0 +1,36 @@
+/* src/components/AlbumCard/AlbumCard.css */
+
+.album-card {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.album-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.album-card .label {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0.5rem 0;
+}
+
+.detail-button {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.detail-button:hover {
+  background-color: #357ab8;
+}

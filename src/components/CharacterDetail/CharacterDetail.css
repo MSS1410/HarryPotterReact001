@@ -1,0 +1,43 @@
+/* src/components/CharacterDetail/CharacterDetail.css */
+
+.character-detail-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.character-detail-container img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.character-detail-container h1 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #333;
+}
+
+.character-detail-container p {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.character-detail-container p strong {
+  color: #333;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,155 @@
+/* src/pages/Home/Home.css */
+
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+/* Contenedor principal del Home */
+.home {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Espaciado vertical entre secciones */
+}
+
+/* Fila 1: Cabecera con SearchBar y botón */
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.see-all-button {
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.see-all-button:hover {
+  background-color: #bca76d;
+}
+
+/* Fila 2: Principals Characters */
+.principals-section {
+  text-align: center;
+}
+
+.principals-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Grid para mostrar 10 personajes en 2 filas (5 columnas cada) */
+.principals-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  justify-items: center;
+}
+
+/* Estilo base para cada tarjeta de personaje (Complementa al que tenga CharacterCard) */
+.character-card {
+  width: 100%;
+  max-width: 180px;
+  background-color: #bca76d;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+}
+
+.character-card:hover {
+  transform: scale(1.02);
+}
+
+.character-card img {
+  width: 100%;
+  height: 200px; /* Tamaño fijo para todas las imágenes */
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.character-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.character-card p {
+  margin-bottom: 0.4rem;
+  color: #666;
+}
+
+/* Mensajes de error */
+.error {
+  color: red;
+  text-align: center;
+  margin: 1rem;
+}
+
+/* Fila 3: Houses */
+.houses-section {
+  text-align: center;
+}
+
+.houses-section h2 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+/* Mostrar las casas en una sola fila */
+.houses-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.house-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.house-card img {
+  width: 120px;
+  height: 120px; /* Tamaño fijo para que sean uniformes */
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.house-card p {
+  margin-top: 0.2rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.house-count {
+  font-size: 0.9rem;
+  color: #666;
+}
