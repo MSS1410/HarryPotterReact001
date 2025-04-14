@@ -1,27 +1,27 @@
-/* header.css */
 
-/* Estilos generales del header */
+
+/* Estilos generales  */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #000000; /* Puedes ajustar el color de fondo */
+  background-color: #000000; 
   color: #fff;
 }
 
-/* Estilos para el logo */
+
 .logo {
   display: flex;
   align-items: center;
 }
 
 .logo img {
-  height: 40px; /* Ajusta el tamaño de tu logo */
+  height: 40px; 
   width: auto;
 }
 
-/* Estilos para la navegación */
+/*  navegacion */
 nav ul {
   list-style: none;
   display: flex;
@@ -35,7 +35,7 @@ nav ul li {
   align-items: center;
 }
 
-/* Estilo para los enlaces de navegación */
+
 nav ul li a {
   text-decoration: none;
   color: #fff;
@@ -43,18 +43,17 @@ nav ul li a {
   transition: color 0.3s ease;
 }
 
-/* Estilo para el enlace activo */
+/* enlace activo */
 nav ul li a.active {
   font-weight: bold;
-  border-bottom: 2px solid #fff; /* Indicador visual del enlace activo */
-}
+  border-bottom: 2px solid #fff; 
 
-/* Efecto hover en los enlaces */
+
 nav ul li a:hover {
   color: #d0e6f7;
 }
 
-/* Responsividad: para pantallas pequeñas */
+/*pantallas pequeñas */
 @media (max-width: 600px) {
   header {
     flex-direction: column;
